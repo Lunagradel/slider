@@ -1,0 +1,15 @@
+@mixin transparent-gradient($colorOne, $colorTwo, $colorThree) {
+
+  background: -webkit-linear-gradient(bottom, $colorOne, $colorTwo, $colorThree); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, $colorOne, $colorTwo, $colorThree); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, $colorOne, $colorTwo, $colorThree); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, $colorOne, $colorTwo, $colorThree);
+}
+
+@mixin transition($prop, $time){
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  -o-transition: $prop $time;
+  transition: $prop $time;
+}

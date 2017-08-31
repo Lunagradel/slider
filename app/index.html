@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>gallery</title>
+</head>
+<body>
+    <div class="images-wrapper">
+        <div class="images"></div>
+
+        <div class="image-overlay">
+            <div class="top-bar">
+                <p class="img-name"></p>
+            </div>
+            <div class="slide-buttons-container">
+                <i class="material-icons slide-arrow" id="left-arrow">keyboard_arrow_left</i>
+                <i class="material-icons slide-arrow" id="right-arrow">keyboard_arrow_right</i>
+            </div>
+            <div class="bottom-bar">
+                <div id="infoBtn">
+                    <i class="material-icons slide-arrow" id="arrow-up">keyboard_arrow_up</i>
+                    <p>more info</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more-info-box">
+        <p class="title"></p>
+        <p class="by"></p>
+        <p class="info"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/slide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+/**
+* SassFlexbox
+* Manage Flexbox in Sass easily.
+*
+* @author     Samuel Marchal (zessx)
+* @version    0.1
+*/
+/*
+    Display
+ */
+.images-wrapper, .images, .image-overlay .top-bar, .slide-buttons-container, .bottom-bar, .bottom-bar div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+/*
+    Flex direction
+ */
+.bottom-bar div {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+/*
+    Flex wrap
+ */
+/*
+    Flex flow
+ */
+/*
+    Order
+ */
+/*
+    Flex grow
+ */
+/*
+    Flex shrink
+ */
+/*
+    Flex basis
+ */
+/*
+    Flex
+ */
+/*
+    Justify content
+ */
+.image-overlay .top-bar, .bottom-bar {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-flex-pack: center;
+  -ms-flex-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.slide-buttons-container {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-flex-pack: justify;
+  -ms-flex-pack: justify;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
+/*
+    Align items
+ */
+.bottom-bar {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end; }
+
+.image-overlay .top-bar, .slide-buttons-container, .bottom-bar div {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+/*
+    Align self
+ */
+/*
+    Align content
+ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "PT Sans Narrow"; }
+
+html {
+  height: 100%;
+  overflow: hidden; }
+
+.images-wrapper, .images {
+  height: 100%;
+  width: 300%; }
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: ease-out 1.2s;
+  -moz-transition: ease-out 1.2s;
+  -ms-transition: ease-out 1.2s;
+  -o-transition: ease-out 1.2s;
+  transition: ease-out 1.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.two {
+  background-color: red !important; }
+
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
+  .image-overlay .top-bar {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-size: 45px; }
+    .image-overlay .top-bar .img-name {
+      -webkit-transition: ease-in 0.5s;
+      -moz-transition: ease-in 0.5s;
+      -ms-transition: ease-in 0.5s;
+      -o-transition: ease-in 0.5s;
+      transition: ease-in 0.5s; }
+
+.slide-buttons-container {
+  width: 100%;
+  height: 80vh;
+  padding: 0px 5px 0px 5px; }
+  .slide-buttons-container i {
+    font-size: 80px;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: ease-in 1s;
+    -moz-transition: ease-in 1s;
+    -ms-transition: ease-in 1s;
+    -o-transition: ease-in 1s;
+    transition: ease-in 1s; }
+
+.bottom-bar {
+  width: 100%;
+  height: 10vh; }
+  .bottom-bar div {
+    width: 15%;
+    color: #ffffff;
+    cursor: pointer; }
+    .bottom-bar div p {
+      font-size: 30px;
+      padding-bottom: 5px; }
+    .bottom-bar div i {
+      font-size: 50px;
+      position: relative;
+      top: 13px;
+      -webkit-transition: linear 0.5s;
+      -moz-transition: linear 0.5s;
+      -ms-transition: linear 0.5s;
+      -o-transition: linear 0.5s;
+      transition: linear 0.5s; }
+
+.more-info-box {
+  width: 100%;
+  height: 37vh;
+  background-color: green; }
+
+.more-info-box, .bottom-bar {
+  -webkit-transition: ease-out 1s;
+  -moz-transition: ease-out 1s;
+  -ms-transition: ease-out 1s;
+  -o-transition: ease-out 1s;
+  transition: ease-out 1s; }
+
+/*# sourceMappingURL=style.css.map */
